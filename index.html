@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<meta content='True' name='HandheldFriendly' />
+<meta content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;' name='viewport' />
+<meta name="viewport" content="width=device-width" />
+<body>
+
+<button style="width:50%;height:200px;" onClick="myCounter()">Start counter!</button>
+
+<p id="demo" style="font-size: 300%;">RESULTADO.</p>
+
+
+<button style="width:50%;height:200px;" onClick="restart()">RESTART</button>
+
+
+<script>
+var c = 0;
+function myCounter() {
+    document.getElementById("demo").innerHTML = ++c;
+}
+function restart() {
+	c = 0;
+    document.getElementById("demo").innerHTML = 0;
+}
+</script> 
+
+</body>
+</html>
